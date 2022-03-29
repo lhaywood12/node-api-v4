@@ -1,0 +1,21 @@
+<%- include('../partials/header'); %>
+
+ <main class="main main-actor">
+     <section class="section section-actor container">
+         <% data.forEach(item => { <%
+         <div class="item-div col-md-4">
+            <figure class="figure fig-actor">
+                <img src="https://via.placeholder.com/200X250" alt="pladeholder img" class="img-fluid actor-img"/>
+                <figcaption>
+                <class ="actor-figcap">
+                    <a href="/actor/<%= item.actor_id %>">
+                        <%= item.first_name %>
+                        <%= item.last_name %>   
+                    </a>    
+                </figcaption>
+                </figure>
+        <% }) %>
+     </section>
+ </main>
+
+<%-include('../partials/footer'); %>
